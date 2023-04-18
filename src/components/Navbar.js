@@ -1,7 +1,15 @@
 import { NavLink, Outlet } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 import logo from '../assets/planet.png';
+import { fetchMissions } from '../redux/missions/missionsSlice';
 
 export default function Navbar() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchMissions());
+  }, [dispatch]);
+
   return (
     <>
       <header className="navbar">
