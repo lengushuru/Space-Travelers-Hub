@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 2px;
+  margin-top: 2vh;
+}
+
+.mission-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.mission_name,
+.mission-btn {
+  display: flex;
+  width: 15vw;
+  height: 17vh;
+  background-color: #fff;
+  border: 1px solid gray;
+}
+
+.mission-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission_description {
+  display: flex;
+  width: 70vw;
+  height: 17vh;
+  background-color: #fff;
+  border: 1px solid gray;
+}
+
+.title_hieght {
+  height: 4vh;
+}
+
+.member,
+.member-toggled {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid gray;
+  padding: 8px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.not-member,
+.member-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4a4949;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.member-display {
+  background-color: #0b88bd;
+}
+
+.member-toggled {
+  border: 1px solid red;
+  color: red;
+}
