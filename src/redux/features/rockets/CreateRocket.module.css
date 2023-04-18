@@ -34,7 +34,7 @@
   font-size: 1rem;
   margin: 0 0.5rem 0.4rem 0;
   background-color: #0fb6bf;
-  border-radius: 10%;
+  border-radius: 5px;
   padding: 3px;
   color: white;
 }
@@ -46,7 +46,7 @@
   background-color: #3b7df7;
   color: white;
   padding: 1rem 0.2rem;
-  border-radius: 6%;
+  border-radius: 5px;
 }
 
 .cancelBtn {
@@ -55,5 +55,5 @@
   background-color: white;
   color: rgb(77, 74, 74);
   padding: 1rem 0;
-  border-radius: 6%;
+  border-radius: 5px;
 }
