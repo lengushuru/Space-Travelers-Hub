@@ -1,9 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-
 import { NavLink, Outlet } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import { useEffect } from 'react';
 import logo from '../assets/planet.png';
 import { fetchRockets } from '../redux/features/rockets/rocketSlice';
 import { fetchMissions } from '../redux/missions/missionsSlice';
