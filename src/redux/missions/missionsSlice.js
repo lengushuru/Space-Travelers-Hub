@@ -21,7 +21,9 @@ const missionsSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(fetchMissions.fulfilled,
-        (state, { payload }) => ({ ...state, missions: [...payload] }));
+        (state, { payload }) => ({ ...state, missions: [...payload] }))
+      .addCase(fetchMissions.pending,(state) => ({ ...state, isLoading: true }))
+      .addCase(fetchMissions.rejected,(state) => ({ ...state, isLoading: false }));
   },
 });
 
