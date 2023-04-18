@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import styles from './Rockets.module.css';
+import styles from './CreateRocket.module.css';
 import { toggleReservedState } from './rocketSlice';
 import falcon1 from '../../../assets/falcon1.jpg';
 
