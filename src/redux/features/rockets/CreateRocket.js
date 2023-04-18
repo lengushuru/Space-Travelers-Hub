@@ -15,18 +15,23 @@ const Rocket = () => {
   }
 
   if (rockets.error) {
-    return <h1>{rockets.error}</h1>;
+    return <h1>Oops, something went wrong. Please try again later.</h1>;
   }
 
   return (
     <ul className={styles.rocketUL}>
       {rockets.rockets.map((rocket) => (
         <li key={rocket.id}>
-          <img src={rocket.flickr_images[0]} onError={handleImageError} alt={rocket.rocket_name} />
-          <div>
+          <img
+            className={styles.rocketImg}
+            src={rocket.flickr_images[0]}
+            onError={handleImageError}
+            alt={rocket.rocket_name}
+          />
+          <div className={styles.descripContainer}>
             <p className={styles.name}>{rocket.rocket_name}</p>
-            <p>
-              {rocket.reserved && <span className={styles.reservedBadge}>reserved</span>}
+            <p className={styles.description}>
+              {rocket.reserved && <span className={styles.reservedBadge}>Reserved</span>}
               {rocket.description}
             </p>
             <button
@@ -34,6 +39,7 @@ const Rocket = () => {
                 dispatch(toggleReservedState(rocket.id));
               }}
               type="submit"
+              className={rocket.reserved ? styles.cancelBtn : styles.reservedBtn}
             >
               {rocket.reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
 
