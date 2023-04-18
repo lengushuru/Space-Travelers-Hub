@@ -1,7 +1,8 @@
-import React from 'react';
+import Rocket from '../../redux/features/rockets/Rocket';
 
 const Rockets = () => (
-  <div>Rockets</div>
+  <div>
+    <Rocket />
+  </div>
 );
-
 export default Rockets;
