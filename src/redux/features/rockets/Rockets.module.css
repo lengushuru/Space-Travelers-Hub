@@ -41,19 +41,19 @@
 
 .reservedBtn {
   font-size: 1.5rem;
-  width: 30%;
+  width: 23%;
   border: none;
   background-color: #3b7df7;
   color: white;
-  padding: 1rem;
+  padding: 1rem 0.2rem;
   border-radius: 6%;
 }
 
 .cancelBtn {
-  font-size: 1.5rem;
-  width: 30%;
+  font-size: 1.3rem;
+  width: 23%;
   background-color: white;
   color: rgb(77, 74, 74);
-  padding: 1rem;
+  padding: 1rem 0;
   border-radius: 6%;
 }
