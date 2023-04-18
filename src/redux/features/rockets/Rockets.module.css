@@ -1,7 +1,25 @@
 img {
-  height: 100px;
+  width: 200px;
 }
 
 .rocketUL {
   list-style: none;
+  margin: 2rem;
+}
+
+.rocketUL li {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.reservedBadge {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  color: rgb(5, 148, 243);
 }
