@@ -10,8 +10,12 @@ const initialState = {
 const APIurl = 'https://api.spacexdata.com/v3/missions';
 
 export const fetchMissions = createAsyncThunk('fetch/missions', async () => {
-  const response = await Axios.get(APIurl);
-  return response.data;
+  try {
+    const response = await Axios.get(APIurl);
+    return response.data;
+  } catch (error) {
+    return error;
+  }
 });
 
 const missionsSlice = createSlice({
@@ -22,8 +26,8 @@ const missionsSlice = createSlice({
     builder
       .addCase(fetchMissions.fulfilled,
         (state, { payload }) => ({ ...state, missions: [...payload] }))
-      .addCase(fetchMissions.pending,(state) => ({ ...state, isLoading: true }))
-      .addCase(fetchMissions.rejected,(state) => ({ ...state, isLoading: false }));
+      .addCase(fetchMissions.pending, (state) => ({ ...state, isLoading: true }))
+      .addCase(fetchMissions.rejected, (state) => ({ ...state, isLoading: false }));
   },
 });
 
