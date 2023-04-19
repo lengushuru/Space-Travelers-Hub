@@ -1,101 +1,69 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Link links component should match snapshot 1`] = `
+exports[`missions tests Mission to match Snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-       
-      <header
-        class="navbar"
-      >
-        <a
-          class="navbar-img"
-          href="/"
+      <div>
+        <div
+          class="container"
         >
-          <img
-            alt="Company Logo"
-            src="planet.png"
-          />
-          <h1>
-            Space Travelers' Hub
-          </h1>
-        </a>
-        <nav
-          class="navbar-links"
-        >
-          <a
-            aria-current="page"
-            class="active"
-            href="/"
+          <div
+            class="mission-container title_hieght"
           >
-            Rockets
-          </a>
-          <a
-            class=""
-            href="/missions"
-          >
-            Missions
-          </a>
-          <hr
-            class="line"
-          />
-          <a
-            class=""
-            href="/myProfile"
-          >
-            My Profile
-          </a>
-        </nav>
-      </header>
-       
+            <h2
+              class="mission_name title_hieght"
+            >
+              Missions
+            </h2>
+            <h2
+              class="mission_description title_hieght"
+            >
+              description
+            </h2>
+            <h2
+              class="mission_name title_hieght"
+            >
+              status
+            </h2>
+            <p
+              class="mission_name title_hieght"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   </body>,
   "container": <div>
-     
-    <header
-      class="navbar"
-    >
-      <a
-        class="navbar-img"
-        href="/"
+    <div>
+      <div
+        class="container"
       >
-        <img
-          alt="Company Logo"
-          src="planet.png"
-        />
-        <h1>
-          Space Travelers' Hub
-        </h1>
-      </a>
-      <nav
-        class="navbar-links"
-      >
-        <a
-          aria-current="page"
-          class="active"
-          href="/"
+        <div
+          class="mission-container title_hieght"
         >
-          Rockets
-        </a>
-        <a
-          class=""
-          href="/missions"
-        >
-          Missions
-        </a>
-        <hr
-          class="line"
-        />
-        <a
-          class=""
-          href="/myProfile"
-        >
-          My Profile
-        </a>
-      </nav>
-    </header>
-     
+          <h2
+            class="mission_name title_hieght"
+          >
+            Missions
+          </h2>
+          <h2
+            class="mission_description title_hieght"
+          >
+            description
+          </h2>
+          <h2
+            class="mission_name title_hieght"
+          >
+            status
+          </h2>
+          <p
+            class="mission_name title_hieght"
+          />
+        </div>
+      </div>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
