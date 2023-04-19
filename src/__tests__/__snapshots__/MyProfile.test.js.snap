@@ -11,9 +11,16 @@ Object {
         <div
           class="missionContainer"
         >
-          <p>
-            missions container
-          </p>
+          <h2>
+            My Missions
+          </h2>
+          <ul
+            class="UL"
+          >
+            <li>
+              It looks like you haven't Joined any Missions yet. Don't forget to check out the Missions page to make a reservation.
+            </li>
+          </ul>
         </div>
         <div
           class="rocketContainer"
@@ -22,7 +29,7 @@ Object {
             My Rockets
           </h2>
           <ul
-            class="rocketsUL"
+            class="UL"
           >
             <li>
               It looks like you haven't reserved any rockets yet. Don't forget to check out the Rockets page to make a reservation.
@@ -39,9 +46,16 @@ Object {
       <div
         class="missionContainer"
       >
-        <p>
-          missions container
-        </p>
+        <h2>
+          My Missions
+        </h2>
+        <ul
+          class="UL"
+        >
+          <li>
+            It looks like you haven't Joined any Missions yet. Don't forget to check out the Missions page to make a reservation.
+          </li>
+        </ul>
       </div>
       <div
         class="rocketContainer"
@@ -50,7 +64,7 @@ Object {
           My Rockets
         </h2>
         <ul
-          class="rocketsUL"
+          class="UL"
         >
           <li>
             It looks like you haven't reserved any rockets yet. Don't forget to check out the Rockets page to make a reservation.
