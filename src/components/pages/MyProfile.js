@@ -1,27 +1,27 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import styles from '../../redux/features/rockets/MyProfile.module.css';
+import styles from '../../styles/MyProfile.module.css';
 
 const MyProfile = () => {
   const rockets = useSelector((state) => state.rockets.rockets);
-  const missions = useSelector((state) => state.mission001.missions);
   const reservedRockets = rockets.filter((rocket) => rocket.reserved);
-  const reservedMissions = missions.filter((mission) => mission.reserved);
+  const missions = useSelector((state) => state.mission001.missions);
+  const joinedMission = missions.filter((mission) => mission.reserved);
 
   return (
     <div className={styles.mainContainer}>
-      <div className={styles.rocketContainer}>
+      <div className={styles.missionContainer}>
         <h2>My Missions</h2>
-        <ul className={styles.rocketsUL}>
-          {reservedMissions.length ? (
-            reservedMissions.map((rocket) => (
-              <li key={rocket.mission_id}>{rocket.mission_name}</li>
+        <ul className={styles.UL}>
+          {joinedMission.length ? (
+            joinedMission.map((mission) => (
+              <li key={mission.id}>{mission.mission_name}</li>
             ))
           ) : (
             <>
               <li>
-                It looks like you haven&apos;t joined any mission yet.
-                please navigate to Missions section and select missions to join
+                It looks like you haven&apos;t Joined any Missions yet.
+                Don&apos;t forget to check out the Missions page to make a reservation.
               </li>
             </>
           )}
@@ -29,7 +29,7 @@ const MyProfile = () => {
       </div>
       <div className={styles.rocketContainer}>
         <h2>My Rockets</h2>
-        <ul className={styles.rocketsUL}>
+        <ul className={styles.UL}>
           {reservedRockets.length ? (
             reservedRockets.map((rocket) => (
               <li key={rocket.id}>{rocket.name}</li>
@@ -47,4 +47,5 @@ const MyProfile = () => {
     </div>
   );
 };
+
 export default MyProfile;

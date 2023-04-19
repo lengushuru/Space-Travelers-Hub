@@ -1,6 +1,5 @@
 .mainContainer {
   display: flex;
-  align-items: center;
   gap: 2rem;
   padding: 2rem 4rem;
 }
@@ -13,18 +12,19 @@
   width: 50%;
 }
 
+.missionContainer h2,
 .rocketContainer h2 {
   margin: 1rem;
 }
 
-.rocketsUL {
+.UL {
   list-style: none;
   border: 0.5px solid rgb(153, 151, 151);
   border-bottom: none;
   border-radius: 5px;
 }
 
-.rocketsUL li {
+.UL li {
   padding: 2rem;
   border-bottom: 0.6px solid rgb(153, 151, 151);
   font-size: 1.5rem;
