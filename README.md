@@ -77,24 +77,26 @@ Overall, the Space Travelers' Hub is a successful web application that meets the
 
 # 💻 Key Features <a name="key-features"></a>
 
-## Home page:
+## Home page/Rockets:
 
 - When the page loads, the webapp retrieves data from:
-- The selected API and shows the list of items on screen.
-- The Involvement API to show the item likes.
-- The page should make only 2 requests:
-- One to the base API.
-- One to the Involvement API.
-- When the user clicks on the Like button of an item, the interaction is recorded in the Involvement API and the screen is updated.
-- Home page header and navigation similar to the given mockup.
-- Home page footer similar to the given mockup.
+- The selected SpaceX API and shows the list of Rockets on the screen.
+- The page makes only 1 request to show data.
+- When the user clicks on the Reservation button of an item, the interaction is recorded and the screen is updated by showing Reseved.
+- Home page header and navigation similar to the given design.
 
-## Comments popup:
+## Missions:
 
-- When the popup loads, the webapp retrieves data from:
-- The selected API and shows details about the selected item.
-- The Involvement API to show the item comments.
-- When the user clicks on the "Comment" button, the data is recorded in the Involvement API and the screen is updated.
+- When the page loads, the webapp retrieves data from:
+- The selected SpaceX API and shows the list of missons on the screen.
+- The page makes only 1 request to show data.
+- When the user clicks on the Join button of an item, the interaction is recorded and the screen is updated by showing Join successful.
+- Home page header and navigation similar to the given design.
+
+## My Profile:
+
+- Selected all interactions save on the My Profile page and show the list
+- of Rockets reservation and Missions.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
