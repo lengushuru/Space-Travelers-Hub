@@ -14,11 +14,17 @@ const Missions1 = () => {
         <p className="mission_name title_hieght" />
       </div>
       {missions.map((mission) => (
-        <div key={mission.mission_id} className="mission-container">
+        <div
+          key={mission.mission_id}
+          style={{
+            backgroundColor: missions.indexOf(mission) % 2 === 0 ? '#edeff5' : '#fff',
+          }}
+          className="mission-container"
+        >
           <h2 className="mission_name">{mission.mission_name}</h2>
           <p className="mission_description">{mission.description}</p>
           <div className="mission-btn">
-            {mission.reserved ? <button type="button" className="member-display">Active member</button> : <button type="button" className="not-member">Not A MEMBER</button> }
+            {mission.reserved ? <button type="button" className="member-display">Active member</button> : <button type="button" className="not-member">Not A MEMBER</button>}
           </div>
           <div className="mission-btn">
             {mission.reserved ? (
