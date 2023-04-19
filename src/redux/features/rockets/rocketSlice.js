@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export const fetchRockets = createAsyncThunk('rockets/fetchRockets', async () => {
   try {
-    const response = await axios.get('https://api.spacexdata.com/v3/rockets');
+    const response = await axios.get('https://api.spacexdata.com/v4/rockets');
     return response.data;
   } catch (error) {
     return (error.message);
@@ -22,9 +22,8 @@ export const rocketSlice = createSlice({
   initialState,
   reducers: {
     toggleReservedState: (state, action) => {
-      const id = action.payload;
       const newRockets = state.rockets.map((rocket) => {
-        if (rocket.id !== id) return rocket;
+        if (rocket.id !== action.payload) return rocket;
         return { ...rocket, reserved: !rocket.reserved };
       });
       return {
