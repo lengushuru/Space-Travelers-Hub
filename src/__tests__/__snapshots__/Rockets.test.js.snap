@@ -1,64 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`missions tests MissionCreate to match Snapshot 1`] = `
+exports[`Rockets Rockets to match Snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="container"
-      >
-        <div
-          class="mission-container title_hieght"
-        >
-          <h2
-            class="mission_name title_hieght"
-          >
-            Missions
-          </h2>
-          <h2
-            class="mission_description title_hieght"
-          >
-            description
-          </h2>
-          <h2
-            class="mission_name title_hieght"
-          >
-            status
-          </h2>
-          <p
-            class="mission_name title_hieght"
-          />
-        </div>
+      <div>
+        <h1>
+           Please wait, Rockets are Loading...
+        </h1>
       </div>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="container"
-    >
-      <div
-        class="mission-container title_hieght"
-      >
-        <h2
-          class="mission_name title_hieght"
-        >
-          Missions
-        </h2>
-        <h2
-          class="mission_description title_hieght"
-        >
-          description
-        </h2>
-        <h2
-          class="mission_name title_hieght"
-        >
-          status
-        </h2>
-        <p
-          class="mission_name title_hieght"
-        />
-      </div>
+    <div>
+      <h1>
+         Please wait, Rockets are Loading...
+      </h1>
     </div>
   </div>,
   "debug": [Function],
