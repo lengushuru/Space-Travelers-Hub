@@ -104,7 +104,7 @@ Overall, the Space Travelers' Hub is a successful web application that meets the
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://lengushuru.github.io/Space-Travelers-Hub)
+- [Live Demo Link](https://mellifluous-crumble-2470ac.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
