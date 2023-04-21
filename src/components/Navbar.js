@@ -16,7 +16,7 @@ export default function Navbar() {
     <>
       <header className="navbar">
         <a className="navbar-img" href="/">
-          <img src={logo} alt="Company Logo" />
+          <img src={logo} alt="Company Logo" className="App-logo" />
           <h1>Space Travelers&apos; Hub</h1>
         </a>
         <nav className="navbar-links">
